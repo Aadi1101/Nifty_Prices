@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import '../App.css'
 
 
@@ -13,7 +13,7 @@ const GetData = ({stock,identity})=>{
     if(identity>=49){
         idthree = 0
     }
-    if(identity==50){
+    if(identity===50){
         idtwo=0
         idthree=1
     }

@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+html, body, #root{
+    font:0.9rem sans-serif;
+    background: #0a1f44;
+    color: #1e2432;
+    height: 100%;
+    margin: 1px;
+    display: inline-block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container{
+    /* background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.418)),url('https://wallpapers.com/images/high/natural-mist-above-mountains-u3ejbzzd9tozy3bw.webp'); */
+    /* background-size: cover; */
+    background-position: center;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    padding: 20px 7%;
+    border: none;
+    border-radius: 20px;
+    margin-top: 1%;
+    background: rgba(250,250,250,0.85);
+    width:25vw;
+    text-transform: uppercase;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.welcome{
+    font-weight: bolder;
+    font-size: medium;
+    float:inherit;
+    margin: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.city-group{
+    display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.city{
+    background: rgba(250,250,250,0.85);
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* padding: 40px 8%; */
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0 rgba(15,15,15,0.404);
 }
+
+.city sup{
+    font-size: 0.5em;
+}
+
+.city-name{
+    font-size: 30px;
+}
+h2{
+    margin: 5px;
+}
+
+.city-name sup{
+    /* padding: 0.2em 0.6em;
+    margin-left: 0.2em; */
+    border-radius: 30px;
+    color: #fff;
+    background: #ff8c00;
+}
+
+.city-temp{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top:0;
+    color: #1e2432;
+    text-align: center;
+}
+
+.city-icon{
+    margin-top: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    font-size: 1em;
+}
+
+.leftbox {
+    display: inline-block;
+    /* position: fixed; */
+    float:none;
+    background:rgb(22, 87, 137);;
+    width:30%;
+    height:300px;
+    margin-top: 20px;
+    /* margin-right: 2%; */
+    margin-left: 15px;
+}
+.rightbox{
+    position: static;
+    /* float:left; */
+    background:rgb(22, 87, 137);
+    width:30%;
+    height:300px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.middlebox{
+    display: inline-block;
+    position: static;
+    background:rgb(22, 87, 137);;
+    width:35%;
+    height:300px;
+    margin-top: 20px;
+    /* margin-right: 90%; */
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .search {
+        padding: 20px 15%;
+    }
+
+    .city {
+        padding: 40px 20%;
+    }
+}
+/* .box2{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    margin-left: 20px;
+    padding: 40px 8%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0 rgba(15,15,15,0.404);
+}
+
+.box3{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin-left: 20px;
+    padding: 40px 8%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0 rgba(15,15,15,0.404);
+} */

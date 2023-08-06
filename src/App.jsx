@@ -46,7 +46,7 @@ const App = ()=>{
         <>
         <div>
         <div className="main-container">
-            <input type="text" className="search" placeholder="Enter NIFTY 50 Stock Name in CAPSLOCK and press Enter..." value={query} onChange={(e)=>setQuery(e.target.value)} onKeyDown={search} />
+            <input type="text" className="search" placeholder="ENTER NIFTY 50 STOCK NAME IN CAPSLOCK AND PRESS ENTER..." value={query} onChange={(e)=>setQuery(e.target.value)} onKeyDown={search} />
             {weather.main&&query!=='ALL'&&(
                 <>
                 <div className="search welcome" style={{'color':'black'}}>Welcome to my NIFTY 50 Stocks!</div>

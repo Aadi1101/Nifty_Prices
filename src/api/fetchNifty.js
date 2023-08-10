@@ -17,7 +17,7 @@ const fetchNifty = async (query)=>{
         const response = await axios.request(options);
         for(let i=0;i<51;i++){
             if(response.data[i].symbol===query){
-                //console.log(response.data[i]);
+                console.log(response.data);
             }
         }
         return response

@@ -15,7 +15,7 @@ html, body, #root{
     /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; */
+    flex-direction: row; */
 }
 
 .search{
@@ -30,7 +30,10 @@ html, body, #root{
     background: rgba(250,250,250,0.85);
     width:25vw;
     text-transform: uppercase;
-    
+    font-weight: bolder;
+    background-color: aqua;
+    text-align: center;
+    margin-left: 30%;
 }
 
 .welcome{
@@ -38,6 +41,7 @@ html, body, #root{
     font-size: medium;
     float:inherit;
     margin: 5px;
+    margin-left: 30%;
 }
 
 .city-group{
@@ -99,7 +103,7 @@ h2{
     display: inline-block;
     /* position: fixed; */
     float:none;
-    background:rgb(22, 87, 137);;
+    background:aqua;
     width:30%;
     height:300px;
     margin-top: 20px;
@@ -109,7 +113,7 @@ h2{
 .rightbox{
     position: static;
     /* float:left; */
-    background:rgb(22, 87, 137);
+    background:aqua;
     width:30%;
     height:300px;
     margin-top: 20px;
@@ -118,7 +122,7 @@ h2{
 .middlebox{
     display: inline-block;
     position: static;
-    background:rgb(22, 87, 137);;
+    background:aqua;
     width:35%;
     height:300px;
     margin-top: 20px;
@@ -126,33 +130,19 @@ h2{
     margin-left: 15px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 360px) {
     .search {
         padding: 20px 15%;
+        width: 50vw;
+        margin-left: 1%;
     }
 
     .city {
         padding: 40px 20%;
     }
-}
-/* .box2{
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-    background-color: greenyellow;
-    margin-left: 20px;
-    padding: 40px 8%;
-    border-radius: 20px;
-    box-shadow: 10px 10px 5px 0 rgba(15,15,15,0.404);
-}
 
-.box3{
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-    background-color: blue;
-    margin-left: 20px;
-    padding: 40px 8%;
-    border-radius: 20px;
-    box-shadow: 10px 10px 5px 0 rgba(15,15,15,0.404);
-} */
+    .leftbox{
+        height: 350px;
+        padding: 70px;
+    }
+}
